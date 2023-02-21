@@ -1,11 +1,13 @@
 import React from 'react'
-import { DIVFLEX, DIVFLexRight, FLEX, Span } from '../../GlobalStyle/Global'
+import { DIVFLEX, DIVFLexRight, DIVFLexRightNone, FLEX, Span } from '../../GlobalStyle/Global'
 import { Image, Pargraph } from '../../GlobalStyle/Home/SubscribeStyle'
-import { AbsoulteDiv, BoxColor, Container, Li, RelativeDiv, Ul } from '../../GlobalStyle/LayoutStyle'
+import { AbsoulteDiv, BoxColor, Li, RelativeDiv, Ul } from '../../GlobalStyle/LayoutStyle'
 import Banner from '../../Assets/Banner-board-800x420 2.png'
 import TITLE from '../TitleComponent/index'
 import { Buttons } from '../AuthComponents/Buttons'
 import avetar from '../../Assets/Avatar.png'
+import { getUserName } from '../../Context/Auth'
+import { FLEXCOULOM } from '../../GlobalStyle/AuthStyle'
 function Index() {
     return (
         <DIVFLEX
@@ -14,7 +16,7 @@ function Index() {
             padding={"1rem"}
             justifyContent={"space-around"}
         >
-            <DIVFLexRight >
+            <DIVFLexRightNone >
                 <Ul>
                     <Li> Automobiles </Li>
                     <Li> Clothes and wear </Li>
@@ -26,12 +28,13 @@ function Index() {
                     <Li> Machinery tools </Li>
                     <Li> More category   </Li>
                 </Ul>
-            </DIVFLexRight>
+            </DIVFLexRightNone>
             <RelativeDiv>
                 <Image
                     src={Banner}
                     height={"450px"}
-                />
+                    width={"100%"}
+                 />
                 <AbsoulteDiv>
                     <TITLE fontWeight={"400"} title={"Latest trending"} />
                     <TITLE title={"Electronic items"} />
@@ -53,10 +56,15 @@ function Index() {
                     background={"#E3F0FF"}>
                     <FLEX>
                         <Image marginRights={"1"} src={avetar} alt="avetar" />
-                        <Pargraph width={"88px"}>
-                            Hi, user
-                            let’s get stated
-                        </Pargraph>
+                        <FLEXCOULOM>
+
+                            <Pargraph width={"120px"}>
+                                Hi, {getUserName()}
+                            </Pargraph>
+                            <Pargraph width={"120px"} >
+                                let’s get stated
+                            </Pargraph>
+                        </FLEXCOULOM>
                     </FLEX>
                     <Buttons
                         color="#FFFF"

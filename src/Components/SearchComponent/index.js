@@ -1,5 +1,5 @@
 import React from 'react'
-import { INPUT, INPUTSearch } from '../../GlobalStyle/AuthStyle'
+import {INPUTSearch } from '../../GlobalStyle/AuthStyle'
 import { DIVFLEXRight } from '../../GlobalStyle/Global'
 import Dropdown from '../../GlobalStyle/Home/Dropdown'
 import { Buttons } from '../AuthComponents/Buttons'

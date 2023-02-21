@@ -15,14 +15,15 @@ function Index() {
         <>
             <Container>
                 <Introduaction />
-                <DealsOffer />
-                <HomeOutdoors />
-                <ConsumerEectronics />
-                <Requests />
+               <DealsOffer />
+               <HomeOutdoors />
+              
+              <ConsumerEectronics />
+                    <Requests />
             </Container>
-            <Recommend />
-            <OurServices />
-            <Region />
+         <Recommend />
+                 <OurServices />
+           <Region />
          </>
     )
 }

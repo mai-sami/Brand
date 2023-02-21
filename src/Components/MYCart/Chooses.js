@@ -14,7 +14,7 @@ const subData = [
 function Chooses() {
     return (
         <>
-            <DIVFLEX>
+            <DIVFLEX margin={"2rem 0 0 0 "}>
                 {subData.map((item) => (
                     <FLEX marginLeft={"1"}>
                         <DivBox
@@ -30,11 +30,11 @@ function Chooses() {
 
                         <FLEXCOULOM>
                             <Pargraph
-                                line={1} width={"200px"}
+                                line={1.5} width={"200px"}
                                 margin={".3rem"} color={"#505050"}>{item.text}
                             </Pargraph>
                             <Pargraph
-                                line={1} width={"200px"}
+                                line={1.5} width={"200px"}
                                 margin={".3rem"} color={"#A9ACB0"}>{item.dec}
                             </Pargraph>
                         </FLEXCOULOM>

@@ -8,4 +8,8 @@ align-items: center;
 border-radius: 6px;
 flex: 1;
 
+@media  (max-width:1199px) {
+    display:none;
+  }
+
 `

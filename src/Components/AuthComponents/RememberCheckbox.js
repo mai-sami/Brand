@@ -1,9 +1,9 @@
 import React from 'react'
 import { DIVFLEXRight } from '../../GlobalStyle/Global'
-export function RememberCheckbox({ children,width,margin }) {
+export function RememberCheckbox({ children,width,margin,checked }) {
     return (
         <DIVFLEXRight margin={margin}>
-            <input width={width} type={"checkbox"} />
+            <input checked={checked} width={width} type={"checkbox"} />
             {children}
         </DIVFLEXRight>
     )

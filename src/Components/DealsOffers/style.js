@@ -3,24 +3,23 @@ import Backgrounds from '../../Assets/image 92.png'
 
 export const BoxCulom = styled.div`
 background: #FFFFFF;
-width:165px;
+ min-width:${({ width }) => width};
 border-right: 1px solid #E3E8EE ;
 border-left: 1px solid #E3E8EE ;
-padding:1.5rem;
- 
+padding:1.6rem;
+ border:${({ border }) => border};
 `
 
 export const BoxCulomShear = styled.div`
-min-width:242px;
-height:213px;
+min-width:${({ width }) => width || "252px"};
+height:223px;
  padding:1.5rem;
  background-image:url(${Backgrounds}); 
 `
 export const BoxCulomOutdoors = styled.div`
 background: #FFFFFF;
-height:${({ height }) => height || "80px"};
- width:${({ width }) => width || "165px"};
- border-left: 1px solid #E3E8EE ;
+  width:${({ width }) => width || "165px"};
+ border: 1px solid #E3E8EE ;
  border-bottom: 1px solid #E3E8EE ;
 
 padding:1.5rem;

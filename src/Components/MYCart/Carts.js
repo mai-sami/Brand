@@ -1,5 +1,5 @@
 import React from 'react'
-import { FLEXCOULOM } from '../../GlobalStyle/AuthStyle'
+import { FLEXCOULOM, FLEXCOULOMCard } from '../../GlobalStyle/AuthStyle'
 import { DIVFLEX, FLEX } from '../../GlobalStyle/Global'
 import { Image, Pargraph } from '../../GlobalStyle/Home/SubscribeStyle'
 import { Content } from '../../GlobalStyle/LayoutStyle'
@@ -12,7 +12,7 @@ import left from '../../Assets/Icon/leftIcons.png'
 
 function Carts() {
     return (
-        <FLEXCOULOM>
+        <FLEXCOULOMCard width={"70%"} >
 
             <TITLE fontSize={"30px"} fontWeight={"bolder"} color={"#1C1C1C"}
                 title={" Layer Slim Muscle "} />
@@ -120,7 +120,7 @@ function Carts() {
             </Content>
             <Chooses />
 
-        </FLEXCOULOM>
+        </FLEXCOULOMCard>
     )
 }
 

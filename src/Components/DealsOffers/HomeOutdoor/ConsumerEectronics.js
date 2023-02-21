@@ -1,5 +1,5 @@
 import React from 'react'
-import { DIVFLEX, DIVFLEXBrder, DIVFLexRight, FLEX } from '../../../GlobalStyle/Global'
+import { DIVFLEX, DIVFLEXBrder, DIVFLexRight, RespDiv } from '../../../GlobalStyle/Global'
 import TITLE from '../../TitleComponent/index'
 import logo from '../../../Assets/image 35.png'
 import logo1 from '../../../Assets/image 28.png'
@@ -11,7 +11,7 @@ import logo6 from '../../../Assets/image 34.png'
 import logo7 from '../../../Assets/image 35.png'
 import './index.css'
 import { Image, Pargraph } from '../../../GlobalStyle/Home/SubscribeStyle'
-import { BoxCulomOutdoors, BoxCulomShear } from '../style'
+import { BoxCulom, BoxCulomShear } from '../style'
 import { Buttons } from '../../AuthComponents/Buttons'
 const OfferData = [
     { text: "Smart watches", price: "From USD 19", image: logo },
@@ -22,12 +22,11 @@ const OfferData = [
     { text: "Laptops & PC", price: "From USD 10", image: logo5 },
     { text: "Smartphones", price: "From USD 10", image: logo6 },
     { text: "Electric kattle", price: "From USD 10", image: logo7 },
-
 ]
 function ConsumerEectronics() {
     return (
-        <DIVFLEX marginTop={"1rem"}
-            background={"#FFFF"}
+        <RespDiv marginTop={"1rem"}
+            background={"#FFFFFF"}
             justifyContent={"center"}>
 
             <BoxCulomShear className='tests'>
@@ -43,7 +42,7 @@ function ConsumerEectronics() {
             </BoxCulomShear>
             <DIVFLEXBrder >
                 {OfferData.map((item) => (
-                    <BoxCulomOutdoors width={"218.8px"}>
+                    <BoxCulom width={"275px"}>
                         <DIVFLEX>
                             <DIVFLexRight>
                                 <Pargraph
@@ -63,12 +62,12 @@ function ConsumerEectronics() {
                                 height={"60"}
                                 src={item.image} />
                         </DIVFLEX>
-                    </BoxCulomOutdoors>
+                    </BoxCulom>
                 ))
                 }
             </DIVFLEXBrder>
 
-        </DIVFLEX >
+        </RespDiv >
     )
 }
 

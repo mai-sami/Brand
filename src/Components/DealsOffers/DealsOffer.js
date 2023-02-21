@@ -1,5 +1,5 @@
 import React from 'react'
-import { DIVFLEX, DIVFLEXBrder, DIVFLexRight } from '../../GlobalStyle/Global'
+import {DIVFLEXBrder, DIVFLexRight } from '../../GlobalStyle/Global'
 import TITLE from '../TitleComponent/index'
 import logo from '../../Assets/image 23.png'
 import logo1 from '../../Assets/image 28.png'
@@ -21,9 +21,9 @@ const OfferData = [
 function DealsOffer() {
     return (
         <DIVFLEXBrder marginTop={"1rem"}
-            background={"#FFFF"}
-            justifyContent={"center"}>
-            <BoxCulomShear>
+            background={"#FFFFFF"}
+            justifyContent={"start"}>
+            <BoxCulomShear >
                 <TITLE title={"Deals and offers"} />
                 <Pargraph line={3}>
                     Hygiene equipments
@@ -31,8 +31,8 @@ function DealsOffer() {
                 <TimeOffer />
             </BoxCulomShear>
             {OfferData.map((item) => (
-                <BoxCulom>
-                    <DIVFLexRight>
+                <BoxCulom border={"1px solid #E3E8EE"} width={"222.5px"}>
+                    <DIVFLexRight >
                         <Image
                             width={"120px"}
                             height={"120"}

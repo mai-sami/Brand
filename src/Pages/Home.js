@@ -5,7 +5,6 @@ import Index from '../Components/BodyHomePage'
 function Home() {
     return (
         <>
-    
             <SubHeader />
             <Index/>
     

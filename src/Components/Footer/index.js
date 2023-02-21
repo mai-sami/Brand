@@ -1,5 +1,5 @@
 import React from 'react'
-import { FLEXCOULOM } from '../../GlobalStyle/AuthStyle'
+import { FLEXCOULOM, FLEXCOULOMFooter } from '../../GlobalStyle/AuthStyle'
 import {FLEX, Spans } from '../../GlobalStyle/Global'
 import { Image, Pargraph } from '../../GlobalStyle/Home/SubscribeStyle'
 import { Container, Content } from '../../GlobalStyle/LayoutStyle'
@@ -35,34 +35,34 @@ function Index() {
 
                         </FLEX>
                     </FLEXCOULOM>
-                    <FLEXCOULOM>
+                    <FLEXCOULOMFooter>
                         <Pargraph line={"3"} color={"#1C1C1C"} width={"120px"}>  About </Pargraph>
                         <Pargraph line={"2"} color={"#8B96A5"} width={"120px"}>  About Us </Pargraph>
                         <Pargraph line={"2"} color={"#8B96A5"} width={"120px"}>  Find store </Pargraph>
                         <Pargraph color={"#8B96A5"} width={"120px"}>  Categories </Pargraph>
                         <Pargraph line={"2"} color={"#8B96A5"} width={"120px"}>  Blogs  </Pargraph>
-                    </FLEXCOULOM>
-                    <FLEXCOULOM>
+                    </FLEXCOULOMFooter>
+                    <FLEXCOULOMFooter>
                         <Pargraph line={"3"} color={"#1C1C1C"} width={"120px"}>  Partnership </Pargraph>
                         <Pargraph line={"2"} color={"#8B96A5"} width={"120px"}>  About Us </Pargraph>
                         <Pargraph line={"2"} color={"#8B96A5"} width={"120px"}>  Register </Pargraph>
                         <Pargraph line={"2"} color={"#8B96A5"} width={"120px"}>  Settings </Pargraph>
                         <Pargraph line={"2"} color={"#8B96A5"} width={"120px"}>  My Orders  </Pargraph>
-                    </FLEXCOULOM>
-                    <FLEXCOULOM>
+                    </FLEXCOULOMFooter>
+                    <FLEXCOULOMFooter>
                         <Pargraph line={"3"} color={"#1C1C1C"} width={"120px"}>  Information </Pargraph>
                         <Pargraph line={"2"} color={"#8B96A5"} width={"120px"}>  Help Center </Pargraph>
                         <Pargraph line={"2"} color={"#8B96A5"} width={"120px"}>  Money Refund </Pargraph>
                         <Pargraph line={"2"} color={"#8B96A5"} width={"120px"}>  Shipping </Pargraph>
                         <Pargraph line={"2"} color={"#8B96A5"} width={"120px"}>  Contact us  </Pargraph>
-                    </FLEXCOULOM>
-                    <FLEXCOULOM>
+                    </FLEXCOULOMFooter>
+                    <FLEXCOULOMFooter>
                         <Pargraph line={"3"} color={"#1C1C1C"} width={"120px"}>  For users </Pargraph>
                         <Pargraph line={"2"} color={"#8B96A5"} width={"120px"}>  Login </Pargraph>
                         <Pargraph line={"2"} color={"#8B96A5"} width={"120px"}>  Hot offers </Pargraph>
                         <Pargraph line={"2"} color={"#8B96A5"} width={"120px"}>  Gift boxes </Pargraph>
                         <Pargraph line={"2"} color={"#8B96A5"} width={"120px"}>  Projects  </Pargraph>
-                    </FLEXCOULOM>
+                    </FLEXCOULOMFooter>
                     <FLEXCOULOM>
                         <Pargraph line={"3"} color={"#1C1C1C"} width={"120px"}>  Get app </Pargraph>
                         <Image src={google} alt="googleApp" />

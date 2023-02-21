@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
  export const SubFooterContent = styled.div`
   background: ${({ background }) => background || "#E3E8EE"};
@@ -18,7 +18,6 @@ export const Content = styled.div`
 background: ${({ background }) => background || "#EFF2F4"};
 align-items: center;
 align-items:${({alignItems})=>alignItems||"center"};
-
 justify-content: center;
 padding: ${({ padding }) => padding || "1rem"};
 border-radius:${({BoderRaduis})=>BoderRaduis||"0"};
@@ -27,10 +26,7 @@ width: ${({width})=>width};
 flex-wrap: ${({flexWrap})=>flexWrap};
 display: ${({display})=>display};
 margin:${({margin})=>margin};
-
 border: ${({border})=>border};
-
-
 `
 export const Container = styled.div`
 width: 90%;
@@ -59,14 +55,19 @@ top: 17%;
 `
 export const Ul =styled.ul`
 `
-
 export const Li =styled.li`
 font-family: 'Inter';
 font-style: normal;
 font-weight: 600;
-font-size: 20px;
+font-size: 18px;
 list-style: none;
 color: #505050;
-line-height: 2.5;
+line-height: 2.8;
 
+`
+export const GlobalStyle = createGlobalStyle`
+body{
+    background-color: ${(props) => props.theme.page};
+
+}
 `

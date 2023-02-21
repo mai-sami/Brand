@@ -1,6 +1,6 @@
 import React from 'react'
-import { FLEXCOULOM, Labels } from '../../GlobalStyle/AuthStyle'
-import { DIVFLEX, FLEX } from '../../GlobalStyle/Global'
+import { FLEXCOULOM } from '../../GlobalStyle/AuthStyle'
+import { DIVFLEX, DIVFLEXResp, FLEX } from '../../GlobalStyle/Global'
 import { Image, Pargraph } from '../../GlobalStyle/Home/SubscribeStyle'
 import { Content } from '../../GlobalStyle/LayoutStyle'
 import TITLE from '../TitleComponent/index'
@@ -28,8 +28,7 @@ export function RightDescription() {
             BoderRaduis={"6px"}
             border={"1px solid #dddedf"}
             background={"#FFFF"}
-            width={"25%"}
-            margin={"1rem"}
+             margin={"1rem"}
         >
             <TITLE fontSize={"30px"} fontWeight={"bolder"} color={"#1C1C1C"}
                 title={"You may like"} />
@@ -62,10 +61,10 @@ export function RightDescription() {
 
 export function DescriptionAll() {
     return (
-        <DIVFLEX>
+        <DIVFLEXResp>
             <Description />
             <RightDescription />
-        </DIVFLEX>
+        </DIVFLEXResp>
 
     )
 }

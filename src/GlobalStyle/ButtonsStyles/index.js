@@ -11,7 +11,6 @@ background: ${({ background }) => background || "#0D6EFD"};
 border: none;
 border:${({ border }) => border};
 margin:${({ margin }) => margin};
-
 `
 export const ContinueBUTTON = styled.button`
  border-radius: 6px;

@@ -1,7 +1,7 @@
 import React from 'react'
 import { ButoonLogin, ContinueBUTTON, DivButton } from '../../GlobalStyle/ButtonsStyles'
 
-export function Buttons({margin, border,background,name, color, width, marginTop, padding, borderRuidus }) {
+export function Buttons({ onClick, margin, border, background, name, color, width, marginTop, padding, borderRuidus }) {
     return (
 
         <ButoonLogin
@@ -13,7 +13,8 @@ export function Buttons({margin, border,background,name, color, width, marginTop
             background={background}
             border={border}
             margin={margin}
-
+            onClick={onClick}
+            type="submit"
         >{name}</ButoonLogin>
     )
 }

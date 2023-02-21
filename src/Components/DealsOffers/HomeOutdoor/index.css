@@ -1,6 +1,7 @@
 .as{
     background-image: url('../../../Assets/image\ 92.png');
     background-size: cover;
+ height: auto;
    }
    .test{
     background-image: url('../../../Assets/Group\ 982.png');

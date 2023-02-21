@@ -1,5 +1,5 @@
 import React from 'react'
-import { DIVFLEX, DIVFLEXBrder, DIVFLexRight, FLEX } from '../../../GlobalStyle/Global'
+import { DIVFLEX, DIVFLEXBrder, DIVFLexRight, RespDiv } from '../../../GlobalStyle/Global'
 import TITLE from '../../TitleComponent/index'
 import logo from '../../../Assets/rasm.png'
 import logo1 from '../../../Assets/rasma.png'
@@ -11,7 +11,7 @@ import logo6 from '../../../Assets/image 87.png'
 import logo7 from '../../../Assets/image 90.png'
 import './index.css'
 import { Image, Pargraph } from '../../../GlobalStyle/Home/SubscribeStyle'
-import { BoxCulomOutdoors, BoxCulomShear } from '../style'
+import { BoxCulom, BoxCulomShear } from '../style'
 import { Buttons } from '../../AuthComponents/Buttons'
 const OfferData = [
     { text: "Arabic Emirates", price: "From USD 10", image: logo },
@@ -26,8 +26,8 @@ const OfferData = [
 ]
 function HomeOutdoors() {
     return (
-        <DIVFLEX marginTop={"1rem"}
-            background={"#FFFF"}
+        <RespDiv marginTop={"1rem"}
+            background={"#FFFFFF"}
             justifyContent={"center"}>
 
             <BoxCulomShear className='as'>
@@ -46,7 +46,7 @@ function HomeOutdoors() {
             </BoxCulomShear>
             <DIVFLEXBrder >
                 {OfferData.map((item) => (
-                    <BoxCulomOutdoors width={"218.8px"}>
+                    <BoxCulom border={"1px solid #E3E8EE"}  width={"281.5px"}>
                         <DIVFLEX>
                             <DIVFLexRight>
                                 <Pargraph
@@ -66,12 +66,12 @@ function HomeOutdoors() {
                                 height={"60"}
                                 src={item.image} />
                         </DIVFLEX>
-                    </BoxCulomOutdoors>
+                    </BoxCulom>
                 ))
                 }
             </DIVFLEXBrder>
 
-        </DIVFLEX >
+        </RespDiv >
     )
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { FLEXCOULOM, HR, Labels } from '../../GlobalStyle/AuthStyle'
 import { Image, Pargraph } from '../../GlobalStyle/Home/SubscribeStyle'
 import { Content } from '../../GlobalStyle/LayoutStyle'
-import { DivBox, DIVFLEX, FLEX } from '../../GlobalStyle/Global'
+import { DivBox, DIVFLEX, DIVFLEXResp, FLEX } from '../../GlobalStyle/Global'
 import image1 from '../../Assets/image 36.png'
 import image2 from '../../Assets/image 37.png'
 import image3 from '../../Assets/image 39.png'
@@ -47,7 +47,7 @@ function DetailsIntro() {
                 background={"#FFFF"}
                 margin={"0"}
             >
-                <DIVFLEX alignItems={"flex-start"}
+                <DIVFLEXResp alignItems={"flex-start"}
                     justifyContent={"space-around"}>
 
                     <FLEXCOULOM margin={"1rem"} alignItems={"center"}>
@@ -122,29 +122,25 @@ function DetailsIntro() {
                             justifyContent={"space-around"}
                             background={"#FFF0DF"}
                             width={"100%"}
-                            padding={".6rem"}
+                            padding={".2rem"}
                             marginTop={"1rem"}
-                            height={"55px"}>
+                            height={"unset"}>
                             <FLEXCOULOM>
                                 <Pargraph fontSize={"20"} color={"#FA3434"} cursor={"pointer"} width={"auto"}> $98.00  </Pargraph>
-
                                 <Pargraph fontSize={"20"} cursor={"pointer"} width={"auto"}> 50-100 pcs  </Pargraph>
                             </FLEXCOULOM>
                             <FLEXCOULOM>
                                 <Pargraph fontSize={"20"} cursor={"pointer"} width={"auto"}> $90.00  </Pargraph>
-
                                 <Pargraph fontSize={"20"} cursor={"pointer"} width={"auto"}> 100-700 pcs  </Pargraph>
                             </FLEXCOULOM>
                             <FLEXCOULOM>
                                 <Pargraph fontSize={"20"} cursor={"pointer"} width={"auto"}> $78.00  </Pargraph>
-
                                 <Pargraph fontSize={"20"} cursor={"pointer"} width={"auto"}> 700+ pcs </Pargraph>
                             </FLEXCOULOM>
                         </DivBox>
                         <br></br>
                         <DIVFLEX justifyContent={"left"}>
                             <Pargraph
-
                                 line={1}
                                 padding={".5"}
                                 margin={".3rem"} width={"140px"} color={"#8B96A5"}>Price: </Pargraph>
@@ -257,12 +253,11 @@ function DetailsIntro() {
                                 src={like} />
                             <Pargraph
                                 line={1} width={"200px"}
-
                                 color={"#505050"}>Guanjoi Trading LLC</Pargraph>
                         </FLEX>
                     </FLEXCOULOM>
 
-                </DIVFLEX>
+                </DIVFLEXResp>
 
             </Content>
         </>

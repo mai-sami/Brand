@@ -1,13 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { FLEXCOULOM, Labels } from '../../GlobalStyle/AuthStyle'
 import { ButoonLogin } from '../../GlobalStyle/ButtonsStyles'
-import { DivBox, DIVFLEX, FLEX, Spans } from '../../GlobalStyle/Global'
+import { CardDIVFLEXResp, DivBox, DIVFLEX, FLEX, Spans } from '../../GlobalStyle/Global'
 import { Image, Pargraph } from '../../GlobalStyle/Home/SubscribeStyle'
 import logo from '../../Assets/image 33.png'
 import rate from '../../Assets/Icon/rating3.png'
 import like from '../../Assets/Icon/btn-basic.png'
 import { Container, Content } from '../../GlobalStyle/LayoutStyle'
-import { DivCardWrapper } from '../../GlobalStyle/CardStyles/Card'
 import Dropdown from '../../GlobalStyle/Home/Dropdown'
 import down from '../../Assets/Icon/right.png'
 import up from '../../Assets/Icon/left.png'
@@ -34,9 +33,12 @@ function ItemsCard({ show, handeelShow }) {
                 marginTop={"1rem"}
                 width={show ? "100%" : "100%"}
                 background={"#EFF2F4"}
+                flexWrap={"wrap"}
             >
-                <DivCardWrapper
+                <CardDIVFLEXResp
                     display={show ? "block" : "grid"}
+                    flexWrap={"wrap"}
+
                 >
                     {ItemsCards.map((item) => (
                         <DIVFLEX
@@ -44,6 +46,7 @@ function ItemsCard({ show, handeelShow }) {
                             paddingAll={"1rem"}
                             display={show ? "flex" : "block"}
                             background={"#FFFF"}
+                            width={show?"100%":""}
                             alignItems={"flex-start"}
                         >
                             <DIVFLEX
@@ -95,7 +98,7 @@ function ItemsCard({ show, handeelShow }) {
 
                         </DIVFLEX>
                     ))}
-                </DivCardWrapper>
+                </CardDIVFLEXResp>
                 <DIVFLEX justifyContent="right">
                     <Dropdown borderAll={"1px"}
                         width={"140px"}

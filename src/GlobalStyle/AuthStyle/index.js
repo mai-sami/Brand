@@ -1,16 +1,20 @@
 import styled from "styled-components";
 
-export const Forms = styled.div`
+export const Forms = styled.form`
 background: #FFFFFF;
 box-shadow: 0px 3px 10px rgba(32, 32, 32, 0.1);
 border-radius: 6px;
  padding:2rem;
  overflow: auto;
 margin:${({ margin }) => margin || "5rem auto auto auto"};
-width:${({ width }) => width || "24%"};
+width:${({ width }) => width || "100%"};
 
-
- 
+@media (min-width:800px) and (max-width:1199px) {
+    width:60%
+  }
+  @media (min-width:350px) and (max-width:809px) {
+    width:90%
+  }
   `
 export const Labels = styled.label`
 font-family: 'Inter';
@@ -26,17 +30,17 @@ font-weight: 400;
 `
 export const INPUT = styled.input`
 background: #FFFFFF;
-border: 1px solid #E0E0E0;
+border-style: solid;
+border-width: ${({borders})=>borders||"2px"};
+border-color:${({border})=>border||"#bababaa0"} ;
  border-radius:${({ borderRadius }) => borderRadius || "6px"};
  padding:${({ padding }) => padding || "1rem"};
  margin-top:${({ marginTop }) => marginTop || ".6rem"};
-  width:${({ width }) => width || "90%"};
+  width:${({ width }) => width||"100%"};
  outline: none;
 margin-right:${({ margin }) => margin};
  
- `
-export const INPUTTwo = styled(INPUT)`
- width: 142px;
+ 
 `
 export const INPUTSearch = styled(INPUT)`
 border-right: 1px solid #0D6EFD !important;
@@ -60,10 +64,23 @@ margin:${({ margin }) => margin||"1rem 0 1rem"};
 align-items: ${({ alignItems }) => alignItems};
 padding: ${({ padding }) => padding};
 border-top: ${({ border }) => border};
+width: ${({ width }) => width};
 justify-content: ${({ justifyContent }) =>justifyContent};
-
-
+@media  (max-width:1199px) {
+  width:80%;
+}
 `
+export const FLEXCOULOMCard = styled(FLEXCOULOM)`
+@media  (max-width:1199px) {
+  width:90%;
+}
+`
+export const FLEXCOULOMFooter = styled(FLEXCOULOM)`
+@media  (max-width:1199px) {
+  display:none;
+}
+`
+
 export const Divider = styled.div`
 display: flex;
 align-items: center;
